@@ -1,0 +1,62 @@
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #ffffff;
+}
+.header-teh{
+    max-width: 1200px;
+    height: 70px;
+    padding: 10px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-teh .logo{
+    width: 70px;
+    height: 80px;
+    background-image: url(./abstract-hexagon-logo-illustration-in-trendy-and-minimal-style-png.png);
+    background-position: center;
+    background-size: cover;
+}
+.header-teh nav{
+    width: 35%;
+    padding: 20px;
+}
+.header-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+.header-nav a{
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+}
+main{
+    font-family: 'Montserrat', sans-serif;
+}
+.sec-teh{
+    max-width: 1200px;
+    margin: auto;
+    font-size: 1.1rem;
+    padding: 70px 0;
+}
+main header{
+    
+    text-align: center;
+    font-size: 1.4rem;
+}
+h1{
+    margin-top: 120px;
+}
+.sec-teh li{
+    margin: 20px 0;
+}
