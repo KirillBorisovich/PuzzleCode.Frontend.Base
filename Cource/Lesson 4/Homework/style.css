@@ -60,3 +60,9 @@ h1{
 .sec-teh li{
     margin: 20px 0;
 }
+footer{
+    margin-top: 200px;
+}
+footer p{
+    text-align: center;
+}
