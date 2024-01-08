@@ -357,9 +357,18 @@ display: none;
     font-style: normal;
     font-weight: 400;
     box-sizing: border-box;
-    transition: all 0.3s;
+    transition: all .3s;
 }
-
+:focus{
+    outline-offset: 0px;
+    outline: none;
+}
+a{
+    display: block;
+    border: none;
+    color: transparent;
+    text-decoration: none;
+}
 
 header{
     text-align: center;
@@ -379,7 +388,54 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    list-style: none;
     
+}
+
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #334B35;
+    margin: 0;
+    z-index: 1;
+}
+.header-teh{
+    max-width: 1440px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+.logo{
+    width: 200px;
+    height: 31px;
+}
+.header nav{
+    width: 802px;
+    height: 33px;
+    
+}
+.header-nav{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav a{
+    color: white;
+    font-size: 18px;
+
+}
+.header-nav li:nth-child(1){
+    border-bottom: 1px solid #F7C35F;
 }
 
 
@@ -432,7 +488,8 @@ h3{
     text-transform: uppercase;
 }
 .obl-teh button:hover{
-    background-color: #F6D086;
+    background: #F6D086;
+    
 }
 .obl-teh button:focus{
     background-color: #C58D21;
@@ -543,33 +600,38 @@ h3{
     left: 0;
     right: 0;
 }
-.Projects-card{
+.cards li{
     width: 22%;
+    
+}
+
+.Projects-card{
+    width: 100%;
     height: 350px;
     position: relative;
     border-radius: 10px;
-    
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: top;   
+    box-sizing: content-box;
 }
-.Projects-card:nth-child(1){
+.cards li:nth-child(1) .Projects-card{
     background: 
 		linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), 
 		url(./foto/image\ 18.jpg);
 }
-.Projects-card:nth-child(2){
+.cards li:nth-child(2) .Projects-card{
     background: 
 		linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), 
 		url(./foto/image\ 11.jpg);
 }
-.Projects-card:nth-child(3){
+.cards li:nth-child(3) .Projects-card{
     background: 
 		linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), 
 		url(./foto/image\ 13.jpg);
 }
-.Projects-card:nth-child(4){
+.cards li:nth-child(4) .Projects-card{
     background: 
 		linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5)), 
 		url(./foto/image\ 12.jpg);
@@ -600,5 +662,83 @@ h3{
 }
 .Projects-card-teh svg{
     margin-right: 40px;
+    color: #F7C35F;
+}
+.Projects-card:hover{
+    translate: 0 -25px;
+    border: 1px solid #F7C35F;
+    box-shadow: 0 0 20px 5px rgba(247, 195, 95, .1);
+}
+.Projects-card:focus{
+    border: 1px solid #C58D21;
+}
+.Projects-card:focus svg{
+    color: #C58D21;
+}
+.Projects-card:active{
+    border: 1px solid #A16C06;
+    transform: scale(.9);
+}
+.Projects-card:active svg{
+    color: #C58D21;
+}
+
+
+footer{
+    background-color: #2A3B2A;
+}
+.footer-teh{
+    max-width: 1440px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-teh p{
+    font-size: 15px;
+    color: white;
+}
+.footer-form{
+    width: 315px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-form input{
+    width: 222px;
+    border-radius: 50px;
+    height: 55px;
+    background-color: #263C28;
+    padding: 20px;
+    border: 1px solid #939E94;
+}
+.footer-form input::placeholder{
+    font-size: 14px;   
+}
+.footer-form button{
+    width: 45px;
+    height: 45px;
+    font-size: 15px;
+    color: black;
+    background-color: #F7C35F;
+    border-radius: 100%;
+    font-weight: 500;
+}
+.footer-form button:hover{
+    background: #F6D086;
     
+}
+.footer-form button:focus{
+    background-color: #C58D21;
+}
+.footer-form button:active{
+    background-color: #A16C06;
+    color: white;
+}
+.footer-text{
+    width: 251px;
+    display: flex;
+    justify-content: space-between;
 }
