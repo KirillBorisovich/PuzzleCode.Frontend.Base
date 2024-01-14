@@ -44,8 +44,12 @@
         padding: 0;
     }    
 
+    .sec6-teh{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
     .sec6-foto{
-        display: none;
+        
     }
     .sec6-teh{
         grid-template-columns: 1fr;
