@@ -1,0 +1,149 @@
+
+@media (max-width:1344px){
+    .footer-nav{
+        max-width: 1000px;
+    }
+
+
+
+    .sec4-dop-ob{
+        overflow-x: scroll;
+    }
+    .sec4-teh button{
+        margin-top: 30px;
+    }
+}
+@media (max-width:1100px){
+    .sec1-foto{
+        display: none;
+    }
+    .sec1-text{
+        padding: 60px;
+    }
+    .sec1-teh{
+        grid-template-columns:1fr;
+    }
+
+
+
+    .sec2-cards{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+
+    .sec3-cards{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+
+
+    .section:nth-child(5){
+        padding: 0;
+    }    
+
+    .sec6-teh{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .sec6-foto{
+        
+    }
+    .sec6-teh{
+        grid-template-columns: 1fr;
+    }
+    .sec6-text{
+        padding: 50px 24px;
+    }
+    .sec6-text button{
+        display: block;
+        margin: auto;
+    }
+
+
+
+    .footer-email{
+        padding: 0;
+    }
+}
+@media (max-width:840px){
+    header nav{
+        display: none;
+    }
+    .section{
+        padding: 48px 24px;
+    }
+    .section:nth-child(1){
+        padding: 0;
+    }
+
+    .footer-teh{
+        padding: 50px 25px;
+    }
+    .footer-email{
+        width: 100%;
+    }
+    .footer-icon{
+        display: none;
+    }
+    
+}
+@media (max-width:658px){
+    .header-icon{
+        width: 70px;
+    }
+
+
+    .sec1-text{
+        padding: 25px;
+    }
+    .sec1-text button{
+        margin-bottom: 40px;
+    }
+
+    .sec2-cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: 4fr;
+
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .sec5-form{
+        grid-template-columns: 5.5fr 4.5fr;
+    }
+    .sec5-form input{
+        padding: 17px 10px 17px 30px;
+    }
+    .sec5-form button{
+        font-size: .9rem;
+    }
+
+    .footer-nav{
+        flex-wrap: wrap;
+    }
+    .footer-nav-card{
+        margin-bottom: 50px;
+    }
+    .footer-form{
+        grid-template-columns: 6fr 4fr;
+    }
+    .footer-form input{
+        padding: 17px 15px 17px 30px;
+    }
+    .footer-form input::placeholder{
+        font-size: .9rem;
+    }
+    .footer-form button{
+        font-size: .9rem;
+    }
+}
+@media (max-width:470px){
+    .sec3-foto{
+        height: 250px;
+    }
+}
