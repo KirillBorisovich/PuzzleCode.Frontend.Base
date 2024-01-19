@@ -33,25 +33,39 @@
         -ms-grid-rows: 1fr 30px 1fr;
         grid-template-rows: repeat(2, 1fr);
         row-gap: 30px;
-    }.sec2-cards > *:nth-child(1){
+    }.sec2-cards .sec2-card:nth-child(1){
         -ms-grid-row: 1;
         -ms-grid-column: 1;
-    }.sec2-cards > *:nth-child(2){
+    }.sec2-cards .sec2-card:nth-child(2){
         -ms-grid-row: 1;
         -ms-grid-column: 2;
-    }.sec2-cards > *:nth-child(3){
+    }.sec2-cards .sec2-card:nth-child(3){
         -ms-grid-row: 3;
         -ms-grid-column: 1;
-    }.sec2-cards > *:nth-child(4){
+    }.sec2-cards .sec2-card:nth-child(4){
         -ms-grid-row: 3;
         -ms-grid-column: 2;
     }
 
 
     .sec3-cards{
+        -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+        -ms-grid-rows: 1fr 30px 1fr;
         grid-template-rows: repeat(2, 1fr);
         row-gap: 30px;
+    }.sec3-cards .sec3-card:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }.sec3-cards .sec3-card:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+    }.sec3-cards .sec3-card:nth-child(3){
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }.sec3-cards .sec3-card:nth-child(4){
+        -ms-grid-row: 3;
+        -ms-grid-column: 2;
     }
 
 
@@ -60,14 +74,16 @@
     }    
 
     .sec6-teh{
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
-    }
-    .sec6-foto{
-        
-    }
-    .sec6-teh{
-        grid-template-columns: 1fr;
+    }.sec6-teh .sec6-text:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }.sec6-teh .sec6-foto:nth-child(2){
+        -ms-grid-row: 2;
+        -ms-grid-column: 1;
     }
     .sec6-text{
         padding: 50px 24px;
@@ -119,7 +135,9 @@
     }
 
     .sec2-cards{
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+        -ms-grid-rows: 4fr;
         grid-template-rows: 4fr;
 
     }
@@ -129,6 +147,7 @@
     }
 
     .sec5-form{
+        -ms-grid-columns: 5.5fr 4.5fr;
         grid-template-columns: 5.5fr 4.5fr;
     }
     .sec5-form input{
@@ -139,16 +158,30 @@
     }
 
     .footer-nav{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .footer-nav-card{
         margin-bottom: 50px;
     }
     .footer-form{
+        -ms-grid-columns: 6fr 4fr;
         grid-template-columns: 6fr 4fr;
     }
     .footer-form input{
         padding: 17px 15px 17px 30px;
+    }
+    .footer-form input::-webkit-input-placeholder{
+        font-size: .9rem;
+    }
+    .footer-form input::-moz-placeholder{
+        font-size: .9rem;
+    }
+    .footer-form input:-ms-input-placeholder{
+        font-size: .9rem;
+    }
+    .footer-form input::-ms-input-placeholder{
+        font-size: .9rem;
     }
     .footer-form input::placeholder{
         font-size: .9rem;
